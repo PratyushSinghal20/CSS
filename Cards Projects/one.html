@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Summary</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #88C6EC 0%, #9599E2 100%);
+    }
+
+    .card{
+      width: 380px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .card img{
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card h2{
+      margin-top: 20px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .card p{
+      margin: 15px auto;
+      width: 80%;
+      font-size: 14px;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    /* Amount box */
+    .amount-box{
+      margin: 15px auto;
+      width: 80%;
+      background: #f5f7ff;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+    }
+
+    .amount-box .left{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .amount-box img{
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+
+    .plan-details{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .plan-details strong{
+      font-size: 15px;
+      color: #222;
+    }
+
+    .plan-details span{
+      font-size: 13px;
+      color: #555;
+    }
+
+    .amount-box a{
+      font-size: 13px;
+      font-weight: bold;
+      color: #4a5ee7;
+      text-decoration: none;
+    }
+
+    .amount-box a:hover{
+      text-decoration: underline;
+    }
+
+    /* Buttons */
+    .btn{
+      display: block;
+      margin: 15px auto;
+      width: 80%;
+      padding: 15px;
+      border: none;
+      border-radius: 12px;
+      font-size: 15px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn-primary{
+      background: #20295c;
+      color: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .btn-primary:hover{
+      background: #141b46;
+    }
+
+    .btn-secondary{
+      background: none;
+      color: #555;
+    }
+
+    .btn-secondary:hover{
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Top image -->
+    <img src="icon.jpg" alt="header">
+
+    <!-- Title & text -->
+    <h2>Order Summary</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium alias totam mollitia omnis pariatur rem sunt hic suscipit!
+    </p>
+
+    <!-- Amount Box -->
+    <div class="amount-box">
+      <div class="left">
+        <img src="music.png" alt="music">
+        <div class="plan-details">
+          <strong>Annual Plan</strong>
+          <span>$99.9/year</span>
+        </div>
+      </div>
+      <a href="#">Change</a>
+    </div>
+
+    
+    <button class="btn btn-primary">Proceed to Payment</button>
+    <button class="btn btn-secondary">Cancel Order</button>
+  </div>
+</body>
+</html>

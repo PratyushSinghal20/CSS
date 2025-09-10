@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Insights Card</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0d1b2a; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+            max-width: 1000px;
+            width: 90%;
+        }
+
+        .leftbox {
+            flex: 1;
+            background: #4b164c; 
+            color: white;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .leftbox h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .paragraph {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            color: #ddd;
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .boxes div {
+            text-align: center;
+        }
+
+        .boxes h2, .boxes h3 {
+            margin: 0;
+            font-size: 24px;
+            color: white;
+        }
+
+        .boxes p {
+            margin: 5px 0 0;
+            color: #bbb;
+        }
+
+        .rightbox {
+            flex: 1;
+            background: #0a0a23; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rightbox img {
+            max-width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+       
+        <div class="leftbox">
+            <h1>Get Insights that help your business grow</h1>
+            <div class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Adipisci ipsum odit eaque accusantium totam repellendus minus sit. 
+                Consequuntur, deleniti dignissimos?
+            </div>
+
+            <div class="boxes">
+                <div>
+                    <h2>10K+</h2>
+                    <p>Comments</p>
+                </div>
+                <div>
+                    <h2>214</h2>
+                    <p>Paid Users</p>
+                </div>
+                <div>
+                    <h3>12M+</h3>
+                    <p>Views</p>
+                </div>
+            </div>
+        </div>
+
+     
+        <div class="rightbox">
+            <img src="icon.jpg" alt="Illustration">
+        </div>
+    </div>
+
+</body>
+</html>
