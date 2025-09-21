@@ -1,0 +1,238 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: url(1.jpg) center/cover no-repeat;
+  background-color: rgba(0,0,0,0.5); 
+  background-blend-mode: darken; 
+}
+
+.navbar{
+    width : 1200px;
+    height : 75px;
+    margin : auto;
+}
+
+.icon {
+    width : 200px;
+    float : left;
+    height : 70px;
+}
+
+.logo{
+    color : #ff7200;
+    font-size : 35px;
+    font-family :'Times New Roman', Times, serif;
+    padding-left : 20px;
+    padding-top: 10px;
+    float : left;
+}
+
+.menu{
+    width : 400px;
+    float : left;
+    height : 70px;
+}
+
+ul{
+    float : left;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style : none;
+    margin-left : 62px;
+    margin-top : 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color : #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    transition : 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+.search{
+    width : 330px;
+    float : left;
+    margin-left : 270px;
+}
+
+.srch{
+    font-family : 'Times New Roman' ; 
+    width : 200px;
+    height : 40px;
+    background : transparent;
+    border : 1px solid orange;
+    margin-top: 13px;
+    color : white;
+    font-size: 16px;
+    float :left;
+    padding : 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width : 100px;
+    height : 40px;
+    background : #ff7200;
+    border : 2px solid #ff7200;
+    margin-top : 13px;
+    color : #fff;
+    font-size : 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn:focus{
+    outline : none;
+}
+
+.srch:focus {
+    outline : none;
+}
+
+/* ✅ Flex layout for content */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    color : #fff;
+}
+
+.text-box {
+    max-width: 500px;
+}
+
+.content .par{
+    padding: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+    line-height : 30px;
+}
+
+.content h1{
+    font-family : 'Times New Roman';
+    font-size: 50px;
+    margin-top : 9px;
+    letter-spacing : 2px;
+}
+
+.content .cn{
+    width : 160px;
+    height : 40px;
+    background : #ff7200;
+    border : none;
+    margin-top : 20px;
+    font-size : 18px;
+    border-radius : 10px;
+    cursor : pointer;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color : black;
+    transition : .3s ease;
+}
+
+.cn:hover{
+    background-color: white;
+}
+
+.content span{
+    color : orange;
+    font-size : 60px;
+}
+
+/* ✅ Login box sits on right */
+.form{
+    width : 250px;
+    height : 380px;
+    background : linear-gradient(to top , rgba(0,0,0,0.8), rgba(0,0,0,0.2));
+    border-radius : 10px;
+    padding : 25px;
+}
+
+.form h2{
+    width : 220px;
+    font-family : sans-serif;
+    text-align : center;
+    color : #ff7200;
+    font-size: 22px;
+    background-color : #fff;
+    border-radius : 10px;
+    margin : 2px auto;
+    padding : 8px;
+}
+
+.form input {
+    width : 240px;
+    height : 35px;
+    background : transparent;
+    border-bottom : 1px solid #ff7200;
+    border-top : none;
+    border-right : none;
+    border-left : none;
+    color : #fff;
+    font-size : 15px;
+    letter-spacing : 1px;
+    margin-top : 30px;
+    font-family : sans-serif;
+}
+
+.form input:focus{
+    outline : none;
+}
+
+::placeholder {
+    color : #fff;
+    font-family : Arial, Helvetica, sans-serif;
+}
+
+.btnn{
+    width :  240px;
+    height : 40px;
+    background : #ff7200;
+    border : none;
+    margin-top : 30px;
+    font-size : 18px;
+    border-radius : 10px;
+    cursor : pointer;
+    color : #fff;
+}
+
+.btnn:hover{
+    background : #fff;
+    color : #ff7200;
+}
+
+.btnn a{
+    text-decoration: none;
+    color : black;
+    font-weight: bold;
+}
+
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 17px;
+    padding-top : 20px;
+    text-align : center;
+}
+
+
+
+
