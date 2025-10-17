@@ -1,0 +1,153 @@
+#navList {
+    list-style: none;
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 15px;
+}
+
+nav {
+    width: 100%;
+    padding-right: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #e2e5e8;
+    background-image: linear-gradient(98deg, #e2e5e8 0%, #ffffff 100%);
+}
+
+.navContainer {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+#navLogo {
+    font-size: 2.8rem;
+    color: antiquewhite;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+#navItems {
+    display: flex;
+    gap: 40px;
+}
+
+.footerBox {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    width: 100%;
+    text-align: center;
+    min-height: 40px;
+}
+
+.footerBox p {
+    color: azure;
+    font-size: 2rem;
+}
+
+.contentBox {
+    width: 58%;
+    margin: auto;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.rightBox img {
+    max-height: 400px;
+    max-width: 100%;
+    border-radius: 20px;
+    transition: all 0.6s linear 0s;
+    object-fit: cover;   /* makes sure image fills nicely */
+}
+
+
+.rightBox:hover {
+    transform: scale(1.31);
+}
+
+.leftBox {
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftBox h2 {
+    font-size: 2rem;
+}
+
+.ingBox {
+    font-size: 1.4rem;
+}
+
+.recipeBox {
+    font-size: 1.1rem;
+}
+
+/* Overlay styling */
+.rightBox .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.41);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    transition : all 0.3s linear 0s;
+}
+
+.rightBox:hover .overlay {
+    opacity: 1;
+}
+
+.rightBox .overlay span {
+    color: white;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rightBox .overlay span:hover {
+    transform: scale(1.2);
+}
