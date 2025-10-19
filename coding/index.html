@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Training Courses</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #e2e8f0, #cbd5e1);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 30px 0;
+      color: #333;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* exactly 4 per row */
+      gap: 15px;
+      padding: 20px 60px;
+      border: 2px solid blue;
+      justify-items: center;
+      box-sizing: border-box;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+      padding: 8px;
+      width: 160px;  /* smaller width */
+      height: 100px; /* smaller height */
+      transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      color: #1e3a8a;
+      font-size: 13px;
+      margin: 0;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 11px;
+      margin: 3px 0 5px 0;
+    }
+
+    button {
+      background-color: #1e40af;
+      color: white;
+      border: none;
+      padding: 4px 8px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 11px;
+      align-self: center;
+    }
+
+    button:hover {
+      background-color: #2563eb;
+    }
+
+    /* Make responsive for smaller screens */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on small screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        grid-template-columns: 1fr; /* 1 per row on mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Our Training Courses</h1>
+
+  <div class="container">
+    <div class="card">
+      <h3>C++ Programming</h3>
+      <p>This is test page</p>
+      <button>Read More</button>
+    </div>
+
+    <div class="card">
+      <h3>CSS Programming</h3>
+      <p>This is test page</p>
+      <button>Read More</button>
+    </div>
+
+    <div class="card">
+      <h3>Java Programming</h3>
+      <p>This is test page</p>
+      <button>Read More</button>
+    </div>
+
+    <div class="card">
+      <h3>Python Programming</h3>
+      <p>This is test page</p>
+      <button>Read More</button>
+    </div>
+
+    <div class="card">
+      <h3>C# Programming</h3>
+      <p>This is test page</p>
+      <button>Read More</button>
+    </div>
+
+    <div class="card">
+      <h3>Frontend Programming</h3>
+      <p>This is test page</p>
+      <button>Read More</button>
+    </div>
+
+    <div class="card">
+      <h3>HTML5 Programming</h3>
+      <p>This is test page</p>
+      <button>Read More</button>
+    </div>
+
+    <div class="card">
+      <h3>HTML5 Programming</h3>
+      <p>This is test page</p>
+      <button>Read More</button>
+    </div>
+  </div>
+</body>
+</html>
