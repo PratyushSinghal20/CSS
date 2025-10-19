@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :root{
+         --primary-color: brown;
+         --custom-width : 330px;
+
+        }
+        .container{
+            background-color: beige;
+            height : 650px;
+            border : 2px solid black;
+            display : flex;
+            justify-content: center;
+            align-items : center;
+
+        }
+        .box{
+
+            
+            
+            background-color: aqua;
+            width : var(--custom-width);
+            height : 330px;
+            border: 1px solid var(--primary-color);
+            margin: 4px;
+            padding: 5px;
+            box-shadow: 10px -60px var(--primary-color); 
+        }
+        #head1{
+            text-shadow : 12px 13px  1px white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box">
+            <img src="logo.svg" alt="bhagat ">
+            <h2 id="head1">Welcome To CodeHelp</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam accusamus quia tenetur, assumenda possimus repellendus. Veritatis nam voluptatem ratione autem obcaecati, laborum sunt quos, voluptatum recusandae, iste nemo accusantium ducimus!</p>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+ 
